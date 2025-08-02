@@ -22,9 +22,9 @@ This project showcases a comprehensive sales analysis of Blinkit using Power BI.
 5. Features and Highlights:-
    
    1. Business Problems:    
-     - Lack of Sales Visibility Across Outlet Types.
-     - Unclear Product Category Performance.
-     - Regional Performance Disparities.
+        - Lack of Sales Visibility Across Outlet Types.
+        - Unclear Product Category Performance.
+        - Regional Performance Disparities.
       
    2. Goal of the Dashboard:   
         - The main goal of this Power BI dashboard is to provide a comprehensive and interactive analysis of Blinkit’s sales
