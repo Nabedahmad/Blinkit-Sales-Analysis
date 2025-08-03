@@ -1,13 +1,17 @@
-DATA ANALYSIS PYTHON PROJECT - BLINKIT ANALYSIS
-Import Libraries
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-Import Raw Aata
-df = pd.read_csv("C:/users/dell/Downloads/BlinkIT Grocery Data.csv")
-Sample Data
-df.head(20)
+# DATA ANALYSIS PYTHON PROJECT - BLINKIT ANALYSIS
+### Import Libraries
+
+    import pandas as pd
+    import numpy as np
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+
+### Import Raw Aata
+     df = pd.read_csv("C:/users/dell/Downloads/BlinkIT Grocery Data.csv")
+
+### Sample Data
+     df.head(20)
+
 Item Fat Content	Item Identifier	Item Type	Outlet Establishment Year	Outlet Identifier	Outlet Location Type	Outlet Size	Outlet Type	Item Visibility	Item Weight	Sales	Rating
 0	Regular	FDX32	Fruits and Vegetables	2012	OUT049	Tier 1	Medium	Supermarket Type1	0.100014	15.10	145.4786	5.0
 1	Low Fat	NCB42	Health and Hygiene	2022	OUT018	Tier 3	Medium	Supermarket Type2	0.008596	11.80	115.3492	5.0
@@ -29,7 +33,9 @@ Item Fat Content	Item Identifier	Item Type	Outlet Establishment Year	Outlet Iden
 17	Low Fat	NCB07	Household	2012	OUT049	Tier 1	Medium	Supermarket Type1	0.077628	19.20	197.6110	5.0
 18	Low Fat	FDJ56	Fruits and Vegetables	2018	OUT027	Tier 3	Medium	Supermarket Type3	0.182515	NaN	98.7700	5.0
 19	Low Fat	DRN47	Hard Drinks	2022	OUT018	Tier 3	Medium	Supermarket Type2	0.016895	12.10	178.5660	5.0
-df.tail(10)
+
+     df.tail(10)
+
 Item Fat Content	Item Identifier	Item Type	Outlet Establishment Year	Outlet Identifier	Outlet Location Type	Outlet Size	Outlet Type	Item Visibility	Item Weight	Sales	Rating
 8513	Regular	DRY23	Soft Drinks	2018	OUT027	Tier 3	Medium	Supermarket Type3	0.108568	NaN	42.9112	4.0
 8514	low fat	FDA11	Baking Goods	2018	OUT027	Tier 3	Medium	Supermarket Type3	0.043029	NaN	94.7436	4.0
@@ -41,7 +47,8 @@ Item Fat Content	Item Identifier	Item Type	Outlet Establishment Year	Outlet Iden
 8520	low fat	DRE13	Soft Drinks	2018	OUT027	Tier 3	Medium	Supermarket Type3	0.027571	NaN	86.6198	4.0
 8521	reg	FDT50	Dairy	2018	OUT027	Tier 3	Medium	Supermarket Type3	0.107715	NaN	97.8752	4.0
 8522	reg	FDM58	Snack Foods	2018	OUT027	Tier 3	Medium	Supermarket Type3	0.000000	NaN	112.2544	4.0
-Size of Data
+
+### Size of Data
 df.shape
 (8523, 12)
 print("Size of Data:",df.shape)
@@ -166,5 +173,6 @@ plt.xlabel('Total Sales')
 plt.ylabel('Outlet Location Type')
 plt.tight_layout()
 plt.show()
+
 
  
