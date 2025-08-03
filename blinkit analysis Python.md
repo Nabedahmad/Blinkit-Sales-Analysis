@@ -775,8 +775,8 @@ plt.show()
 
 
     
-![png](<img width="800" height="468" alt="output_29_0" src="https://github.com/user-attachments/assets/4f5ef2aa-905a-4d38-9d4e-73a7ef597a32" />
-)
+<img width="515" height="409" alt="output_23_0" src="https://github.com/user-attachments/assets/17361d2b-b289-4f0d-978b-cda113835d7f" />
+
     
 
 
