@@ -1,16 +1,15 @@
 # DATA ANALYSIS PYTHON PROJECT - BLINKIT ANALYSIS
 ### Import Libraries
-
     import pandas as pd
     import numpy as np
     import matplotlib.pyplot as plt
     import seaborn as sns
 
-### Import Raw Aata
-     df = pd.read_csv("C:/users/dell/Downloads/BlinkIT Grocery Data.csv")
+### Import Raw Data
+df = pd.read_csv("C:/users/dell/Downloads/BlinkIT Grocery Data.csv")
 
 ### Sample Data
-     df.head(20)
+df.head(20)
 
 Item Fat Content	Item Identifier	Item Type	Outlet Establishment Year	Outlet Identifier	Outlet Location Type	Outlet Size	Outlet Type	Item Visibility	Item Weight	Sales	Rating
 0	Regular	FDX32	Fruits and Vegetables	2012	OUT049	Tier 1	Medium	Supermarket Type1	0.100014	15.10	145.4786	5.0
@@ -34,7 +33,7 @@ Item Fat Content	Item Identifier	Item Type	Outlet Establishment Year	Outlet Iden
 18	Low Fat	FDJ56	Fruits and Vegetables	2018	OUT027	Tier 3	Medium	Supermarket Type3	0.182515	NaN	98.7700	5.0
 19	Low Fat	DRN47	Hard Drinks	2022	OUT018	Tier 3	Medium	Supermarket Type2	0.016895	12.10	178.5660	5.0
 
-     df.tail(10)
+df.tail(10)
 
 Item Fat Content	Item Identifier	Item Type	Outlet Establishment Year	Outlet Identifier	Outlet Location Type	Outlet Size	Outlet Type	Item Visibility	Item Weight	Sales	Rating
 8513	Regular	DRY23	Soft Drinks	2018	OUT027	Tier 3	Medium	Supermarket Type3	0.108568	NaN	42.9112	4.0
@@ -51,16 +50,19 @@ Item Fat Content	Item Identifier	Item Type	Outlet Establishment Year	Outlet Iden
 ### Size of Data
 df.shape
 (8523, 12)
+
 print("Size of Data:",df.shape)
 Size of Data: (8523, 12)
-Field Information
+
+### Field Information
 df.columns
 Index(['Item Fat Content', 'Item Identifier', 'Item Type',
        'Outlet Establishment Year', 'Outlet Identifier',
        'Outlet Location Type', 'Outlet Size', 'Outlet Type', 'Item Visibility',
        'Item Weight', 'Sales', 'Rating'],
       dtype='object')
-Data Types
+
+### Data Types
 df.dtypes
 Item Fat Content              object
 Item Identifier               object
@@ -85,16 +87,16 @@ print (df['Item Fat Content'].unique())
 ['Regular' 'Low Fat']
 
 #KPI,s Requirements
-1. Total Sales
+###1. Total Sales
 total_sales = df['Sales'].sum()
 
-2. Average Sales
+###2. Average Sales
 Avg_sales = df['Sales'].mean()
 
-3. No of items sold
+###3. No of items sold
 No_of_items_sold = df['Sales'].count()
 
-4. Average Rating
+###4. Average Rating
 Avg_rating = df['Rating'].mean()
 
 #Display
@@ -109,7 +111,7 @@ No of items sold: 8,523.0
 Avg Rating: 4.0
 
 #Charts Requirements
-1. Total Sales by Fat Content
+###1. Total Sales by Fat Content
 sales_by_fat = df.groupby('Item Fat Content')['Sales'].sum()
 plt.pie(sales_by_fat, labels = sales_by_fat.index,
                         autopct = '%.1f%%',
@@ -118,7 +120,7 @@ plt.title('Sales by Fat Content')
 plt.axis('equal')
 plt.show()
 
-2. Total Sales by Item Type
+###2. Total Sales by Item Type
 sales_by_type = df.groupby('Item Type')['Sales'].sum().sort_values(ascending=False)
 plt.figure(figsize=(10,6))
 bars = plt.bar(sales_by_type.index, sales_by_type.values)
@@ -133,7 +135,7 @@ for bar in bars:
 plt.tight_layout()
 plt.show()
 
-3. Fat Content by Outlet by Total Sales
+###3. Fat Content by Outlet by Total Sales
 grouped = df.groupby(['Outlet Location Type', 'Item Fat Content'])['Sales'].sum().unstack()
 grouped = grouped[['Regular', 'Low Fat']]
 ax = grouped.plot(kind='bar', figsize=(8,5), title = 'Outlet Tier by Item fat Content')
@@ -143,7 +145,7 @@ plt.legend(title='Item Fat Content')
 plt.tight_layout()
 plt.show()
 
-4. Total Sales by Outlet Establishment
+###4. Total Sales by Outlet Establishment
 sales_by_year = df.groupby('Outlet Establishment Year')['Sales'].sum().sort_index()
 plt.figure(figsize=(9,5))
 plt.plot(sales_by_year.index,sales_by_year.values, marker = 'o', linestyle='-')
@@ -155,7 +157,7 @@ for x, y in zip(sales_by_year.index, sales_by_year.values):
 plt.tight_layout
 plt.show()
 
-5. Sales by Outlet Size
+###5. Sales by Outlet Size
 sales_by_size = df.groupby('Outlet Size')['Sales'].sum()
 plt.figure(figsize=(4,4))
 plt.pie(sales_by_size, labels=sales_by_size.index, autopct = '%1.1f%%', startangle=90)
@@ -163,7 +165,7 @@ plt.title('Outlet Size')
 plt.tight_layout()
 plt.show()
 
-6. Sales by Outlet Locations
+###6. Sales by Outlet Locations
 sales_by_location = df.groupby('Outlet Location Type')['Sales'].sum().reset_index()
 sales_by_location = sales_by_location.sort_values('Sales', ascending = False)
 plt.figure(figsize = (8,3))  ## smaller height, enough width
@@ -176,3 +178,4 @@ plt.show()
 
 
  
+
