@@ -1,10 +1,10 @@
 # Blinkit-Sales-Analysis
-1.Blinkit Sales Dashboard | Built in Power BI
+### 1.Blinkit Sales Dashboard | Built in Power BI
 
-2. Description:
+### 2. Description:
 This project showcases a comprehensive sales analysis of Blinkit using Power BI. The dashboard visualizes critical KPIs such as total sales, average sales, number of items, average rating. It also highlights customer behavior patterns and sales growth over time. Designed for decision-makers, this dashboard transforms raw sales data into actionable insights to support strategic planning and business optimization.
 
-3. Tech Stack
+### 3. Tech Stack
 - The dashboard was built using the following tools and technologies:
   - 📊 Power BI Desktop - Main data visualization platform used for report creation.
   - 📁 Power Query - Data transformation and cleaning layer for reshaping and preparing the data.
@@ -12,14 +12,14 @@ This project showcases a comprehensive sales analysis of Blinkit using Power BI.
   - 📝 Data Modeling -  Relationships established among tables  to enable cross-filtering and aggregation.
   - 📂 File Format - .pbix for development and .png for dashboard previews.
 
-4. Data Source
-    - Source- kaggle.com
-    - Structured to mimic real-world e-commerce transactional data, making it ideal for business intelligence and
-      dashboarding practice.
-    - Contains key fields such as: Item Fat Content, Item Identifier, Item Type, Item Weight ,Outlet Location Type,
+### 4. Data Source
+   - Source- kaggle.com
+   - Structured to mimic real-world e-commerce transactional data, making it ideal for business intelligence and
+     dashboarding practice.
+   - Contains key fields such as: Item Fat Content, Item Identifier, Item Type, Item Weight ,Outlet Location Type,
       Sales, Rating as well as Outlet Establishment Year from 2011 to 2022.
 
-5. Features and Highlights:-
+### 5. Features and Highlights:-
    
    1. Business Problems:    
         - Lack of Sales Visibility Across Outlet Types.
@@ -88,5 +88,5 @@ This project showcases a comprehensive sales analysis of Blinkit using Power BI.
              - Regular-fat products dominate sales, hinting at lower health preference awareness or market positioning.
              - Sales peaked around 2018, suggesting external market shifts or promotional effectiveness that year.
 
-6. Screenshots / Demos
+### 6. Screenshots / Demos
    ![Dashboard Preview](https://github.com/Nabedahmad/Blinkit-Sales-Analysis/blob/main/dashboard%20power%20BI.png)
