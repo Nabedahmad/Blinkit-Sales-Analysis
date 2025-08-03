@@ -704,7 +704,8 @@ plt.show()
 
 
     
-![png](output_23_0.png)
+![png](<img width="515" height="409" alt="output_23_0" src="https://github.com/user-attachments/assets/b32bacf8-8e5a-48c6-a66d-a8926f9f6b03" />
+)
     
 
 
@@ -729,7 +730,8 @@ plt.show()
 
 
     
-![png](output_25_0.png)
+![png](<img width="989" height="590" alt="output_25_0" src="https://github.com/user-attachments/assets/697303b7-9542-41cc-8228-296bb7627a0d" />
+)
     
 
 
@@ -749,7 +751,8 @@ plt.show()
 
 
     
-![png](output_27_0.png)
+![png](<img width="790" height="490" alt="output_27_0" src="https://github.com/user-attachments/assets/1becab9d-440a-4474-8382-d651f278dc2b" />
+)
     
 
 
@@ -772,7 +775,8 @@ plt.show()
 
 
     
-![png](output_29_0.png)
+![png](<img width="800" height="468" alt="output_29_0" src="https://github.com/user-attachments/assets/4f5ef2aa-905a-4d38-9d4e-73a7ef597a32" />
+)
     
 
 
@@ -790,7 +794,8 @@ plt.show()
 
 
     
-![png](output_31_0.png)
+![png](<img width="374" height="390" alt="output_31_0" src="https://github.com/user-attachments/assets/901783fe-391c-4f5a-af8e-21a413eda672" />
+)
     
 
 
@@ -811,7 +816,8 @@ plt.show()
 
 
     
-![png](output_33_0.png)
+![png](<img width="790" height="290" alt="output_33_0" src="https://github.com/user-attachments/assets/32af4bb6-791c-4b0f-a2f0-ed36e798c1ca" />
+)
     
 
 
